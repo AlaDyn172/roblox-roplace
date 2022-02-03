@@ -1,0 +1,27 @@
+{
+  "name": "roblox-roplace",
+  "version": "1.0.0",
+  "description": "This package helps you retrieve informations from https://ro.place such as recently sold items / listed items / etc.",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaDyn172/roblox-roplace.git"
+  },
+  "keywords": [
+    "roblox",
+    "roplace"
+  ],
+  "author": "AlaDyn172",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlaDyn172/roblox-roplace/issues"
+  },
+  "homepage": "https://github.com/AlaDyn172/roblox-roplace#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "tsc": "^2.0.4"
+  }
+}
