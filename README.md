@@ -2,7 +2,7 @@
 This package helps you retrieve informations from https://ro.place such as recently sold items / listed items / etc.
 
 ## Simple Installation
-```javascript
+```bash
 npm install roblox-roplace
 ```
 
@@ -20,39 +20,43 @@ example_func();
 
 ## Schemas
 ### Data Schema
-```typescript
-interface EnumData {
-  tax: EnumDataTax;
-  recentlysold: Array<EnumDataRecentlySold>;
-  items: Array<EnumDataItemsListed>
+#### Example
+```json
+{
+  "tax": {},
+  "recentlysold": [],
+  "items": []
 }
 ```
 
 ### Tax Schema
-```typescript
-interface EnumDataTax {
-  amount: number;
-  rate: number;
-  max: number;
+#### Example
+```json
+{
+  "amount": 6500,
+  "rate": 6.5,
+  "max": 1500
 }
 ```
 
 ### Items Recently Sold Schema
-```typescript
-interface EnumDataRecentlySold {
-  name: string;
-  price: number;
-  image: string;
+#### Example
+```json
+{
+  "name": "Neon Green Beautiful Hair",
+  "price": 27.81,
+  "image": "https://www.roblox.com/asset-thumbnail/image?assetId=151786902&width=250&height=250&format=png"
 }
 ```
 
 ### Items Listed Schema
-```typescript
-interface EnumDataItemsListed {
-  name: string;
-  price: number;
-  rap: number;
-  image: string;
+#### Example
+```json
+{
+  "name": "Madness Face",
+  "price": 157,
+  "rap": 46976,
+  "image": "https://www.roblox.com/asset-thumbnail/image?assetId=130213380&width=250&height=250&format=png"
 }
 ```
 
