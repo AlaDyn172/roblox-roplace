@@ -41,10 +41,10 @@ class Scraper {
   }
 
   private static async request_roplace() {
-    let resp = await axios.post("https://server.ro.place/graphql", {
+    let resp = await axios.post("https://api.ro.place/graphql", {
       "operationName": "fetchExploreData",
       "variables": {},
-      "query": "query fetchExploreData {\n  funds {\n    group {\n      amount\n      rate\n      max\n      __typename\n    }\n    b4tax {\n      amount\n      rate\n      max\n      __typename\n    }\n    __typename\n  }\n  recentlySold {\n    name\n    itemId\n    price\n    __typename\n  }\n  items {\n    itemId\n    name\n    rap\n    price\n    purchaseToken\n    paymentMethods {\n      name\n      data\n      __typename\n    }\n    seller {\n      id\n      username\n      __typename\n    }\n    __typename\n  }\n}\n"
+      "query": "query fetchExploreData {\n  funds {\n    express {\n      amount\n      rate\n      max\n      __typename\n    }\n    expressStripe {\n      amount\n      rate\n      max\n      __typename\n    }\n    expressCrypto {\n      amount\n      rate\n      max\n      __typename\n    }\n    b4tax {\n      amount\n      rate\n      max\n      __typename\n    }\n    b4taxStripe {\n      amount\n      rate\n      max\n      __typename\n    }\n    b4taxCrypto {\n      amount\n      rate\n      max\n      __typename\n    }\n    __typename\n  }\n  recentlySold {\n    name\n    itemId\n    image\n    price\n    __typename\n  }\n  items {\n    itemId\n    name\n    image\n    rap\n    price\n    type\n    purchaseToken\n    paymentMethods {\n      name\n      data\n      __typename\n    }\n    seller {\n      id\n      username\n      __typename\n    }\n    __typename\n  }\n}"
     });
 
     return resp.data.data;
