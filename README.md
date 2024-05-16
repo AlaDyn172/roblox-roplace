@@ -12,9 +12,9 @@ npm install roblox-roplace
 
 ```javascript
 const ROPlace = require("roblox-roplace");
-// get_data() method is a Promise function.
+// get() method is a Promise function.
 async function example_func() {
-  let data = await ROPlace.get_data();
+  let data = await ROPlace.get();
   console.log(data);
 }
 example_func();
