@@ -41,9 +41,42 @@ example_func();
 
 ```json
 {
-  "amount": 2229,
-  "rate": 6.8,
-  "max": 1608
+  "standard": {
+    "b4tax": {
+      "amount": 0,
+      "rate": 6.8,
+      "max": 0
+    },
+    "express": {
+      "amount": 0,
+      "rate": 7.25,
+      "max": 0
+    }
+  },
+  "crypto": {
+    "b4tax": {
+      "amount": 6693,
+      "rate": 6.8,
+      "max": 4540
+    },
+    "express": {
+      "amount": 6693,
+      "rate": 7.25,
+      "max": 4540
+    }
+  },
+  "stripe": {
+    "b4tax": {
+      "amount": 6693,
+      "rate": 6.8,
+      "max": 4540
+    },
+    "express": {
+      "amount": 6693,
+      "rate": 7.25,
+      "max": 4540
+    }
+  }
 }
 ```
 
